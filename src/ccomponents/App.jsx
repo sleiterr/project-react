@@ -7,6 +7,9 @@ import Mailbox from "./message/mailbox";
 import PackingList from "./packingList/packning";
 import BookList from "./books/books";
 import { favBooks } from "./books/Data";
+import List from "./data-list/personList";
+import ChatApp from "./chat-room/chatApp";
+import AnimalFriends from "./gallery/animalFriends";
 
 export default function App() {
   const username = "John";
@@ -27,6 +30,16 @@ export default function App() {
         <h2>Books of the week</h2>
         <BookList books={favBooks} />
       </>
+      <div className="">
+        <h2>List</h2>
+        <List />
+      </div>
+      <div className="">
+        <ChatApp />
+      </div>
+      <div className="">
+        <AnimalFriends />
+      </div>
     </div>
   );
 }
